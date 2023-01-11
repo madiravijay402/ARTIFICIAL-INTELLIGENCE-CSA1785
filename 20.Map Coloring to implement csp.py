@@ -86,3 +86,13 @@ R = []
 for x in cmap:
     for y in cmap[x]:
         R.append([x,y])
+# initiating a list of provinces
+provinces = []
+for p in cmap:
+    provinces.append(p)
+
+#print(solveCSP(provinces, 3, R, 0))
+
+while(1):
+    num=int(input("Enter number of the color? "))
+    print(solveCSP(provinces, num, R, 0))
